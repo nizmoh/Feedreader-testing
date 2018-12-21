@@ -18,4 +18,4 @@ Tests that are green have passed and red have failed.
 Click "Clone in Desktop" / "Download ZIP"
 Open the folder
 Open index.html on your preferred browser
-There should be several test results at the bottom of the screen that says "~ specs, ~ failures"
+There should be several test results at the bottom of the screen that says "~ specs, ~ failures"sssssssss\

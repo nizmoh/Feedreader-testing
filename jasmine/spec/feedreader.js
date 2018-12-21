@@ -78,24 +78,24 @@ $(function() {
 
     describe('New Feed Selection', function(){
 
-         let feedOne,
-         feedTwo;
+
+        let feedOne,
+        feedTwo;
         beforeEach(done => {
             loadFeed(0, function(){
                 feedOne = $(".feed").html();
+                loadFeed(1, function(){
+                    feedTwo = $(".feed").html();
+                    done();
+                })
                 done();
 
             });
-            loadFeed(1, function(){
-                feedTwo = $(".feed").html();
-                done();
-            })
-
-
         });
 
         it('when new feed is loaded content changes', function(){
-            expect(feedOne === feedTwo).toBe(false);
+            // expect(feedOne === feedTwo).toBe(false);
+            expect(feedOne).not.toEqual(feedTwo);
         });
     });
 
